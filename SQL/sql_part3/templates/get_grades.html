@@ -1,0 +1,26 @@
+
+<html>
+<head>
+<body>
+
+
+Project Title: 
+<!-- {{project_title}} -->
+<ul>
+{% for item in row %}
+
+<li>{{ item[0] }} </li>
+{% endfor %}
+</ul>
+
+Grade: 
+<!-- {{grade}} -->
+<ul>
+{% for item in row %}
+
+<li>{{ item[1] }} </li>
+{% endfor %}
+</ul>
+</body>
+</head>
+</html>

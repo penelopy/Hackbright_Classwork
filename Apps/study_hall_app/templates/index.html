@@ -1,0 +1,35 @@
+<html>
+
+<head>
+	<title> Button
+	</title>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<form action="/wonderful"> <label>"thename"</label>
+	Name<input type="text" id="input_name" name="thename">
+
+	<button type="submit" id="my_button"> THE BEST BUTTON
+	</button>	
+	</form>
+	</br>
+	</br>
+	<a href="/wonderful"><button>asdfasdfs</button></a>
+
+</body>
+
+<script>
+	$("#my_button").click(blah);
+
+	function blah(){
+			$.get('/wonderful/hello',
+			function (result) {
+				alert(result);
+			}
+			)}
+					
+
+
+</script>
+</html>
